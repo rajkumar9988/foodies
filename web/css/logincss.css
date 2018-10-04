@@ -1,0 +1,67 @@
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+.box h2{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.box .inpuBox{
+    position: relative;
+}
+.box .inpuBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+}
+.box .inpuBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.box .inpuBox input:focus ~ label,
+.box .inpuBox input:valid ~ label
+{
+    top: -18px;
+    left: 0;
+    color: #3b5998;
+    font-size: 12px;
+}
+.box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    background: #03a9f4;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+.box label{
+    color: #fff;
+}
